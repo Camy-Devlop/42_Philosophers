@@ -64,13 +64,13 @@ Le programme affiche des messages avec timestamp :
 ## 📂 Structure des Fichiers
 
 .
-├── Makefile # Règles de compilation
-├── includes/ # Fichiers headers (.h)
-├── srcs/ # Sources partie obligatoire
-│ ├── main.c # Point d'entrée
-│ ├── utils.c # Gestion du temps/logs
-│ └── philosophes.c # Logique centrale
-└── bonus/ # Implémentation alternative
+├── Makefile            # Règles de compilation  
+├── includes/           # Fichiers headers (.h)  
+├── srcs/               # Sources partie obligatoire  
+│   ├── main.c          # Point d'entrée  
+│   ├── utils.c         # Gestion du temps/logs  
+│   └── philosophes.c   # Logique centrale  
+└── bonus/              # Implémentation alternative
 
 
 ## 🔍 Exemple Complet
