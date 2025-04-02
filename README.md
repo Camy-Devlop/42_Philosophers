@@ -7,14 +7,13 @@ Simulation du problème des philosophes en C avec threads/mutexes (partie obliga
 Ce projet implémente la fameuse **situation des philosophes** autour d'une table où chacun doit partager des fourchettes avec ses voisins. Deux versions sont fournies :
 
 - **Partie obligatoire** : Utilise des threads et mutexes
-- **Bonus** : Version alternative avec processus et sémaphores
 
 ## 🚀 Utilisation
 
 ### Compilation
 
 make # Compile la partie obligatoire (philo)
-make bonus # Compile la version bonus (philo_bonus)
+
 
 
 
