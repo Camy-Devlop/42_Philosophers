@@ -63,7 +63,6 @@ Le programme affiche des messages avec timestamp :
 
 ## 📂 Structure des Fichiers
 
-.
 ├── Makefile            # Règles de compilation  
 ├── includes/           # Fichiers headers (.h)  
 ├── srcs/               # Sources partie obligatoire  
