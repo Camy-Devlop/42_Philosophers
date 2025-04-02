@@ -6,8 +6,13 @@
 /*   By: isadbaib <isadbaib@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/02 22:47:30 by isadbaib          #+#    #+#             */
-/*   Updated: 2025/04/02 22:47:42 by isadbaib         ###   ########.fr       */
+/*   Updated: 2025/04/03 00:04:09 by isadbaib         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "../include/pilosophers.h"
 
+int main(void)
+{
+
+}
