@@ -1,25 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   pilosophers.c                                      :+:      :+:    :+:   */
+/*   message.h                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: isadbaib <isadbaib@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/02 22:47:30 by isadbaib          #+#    #+#             */
-/*   Updated: 2025/04/04 13:44:29 by isadbaib         ###   ########.fr       */
+/*   Created: 2025/04/04 13:45:12 by isadbaib          #+#    #+#             */
+/*   Updated: 2025/04/04 13:46:09 by isadbaib         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../include/philosophers.h"
+#ifndef MESSAGE_H
+# define MESSAGE_H
 
-int	main(int n, char **tab)
-{
-	struct timeval	t;
-
-	if (n != 5)
-		return (O);
-	printf("retour de time of day = %d\n",
-		gettimeofday(&t, NULL));
-	printf("val sec = %ld\n", t.tv_sec);
-	return (0);
-}
+# define MESSAGE_0 "Error number is not 5\n"
+#endif
