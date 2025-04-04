@@ -1,5 +1,9 @@
 # Prerequisites
 *.d
+.*.c.swp
+.*.swp
+.*.h.swp
+philo
 
 # Object files
 *.o
