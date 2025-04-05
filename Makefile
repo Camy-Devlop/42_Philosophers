@@ -6,11 +6,12 @@
 #    By: isadbaib <isadbaib@student.s19.be>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/04/02 22:46:17 by isadbaib          #+#    #+#              #
-#    Updated: 2025/04/04 12:17:42 by isadbaib         ###   ########.fr        #
+#    Updated: 2025/04/05 03:28:07 by isadbaib         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-SRC= src/pilosophers.c
+SRC= src/message/ft_message.c \
+src/pilosophers.c
 CC = cc
 NAME = philo
 RM = rm

@@ -6,7 +6,7 @@
 /*   By: isadbaib <isadbaib@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/02 22:46:47 by isadbaib          #+#    #+#             */
-/*   Updated: 2025/04/04 14:09:33 by isadbaib         ###   ########.fr       */
+/*   Updated: 2025/04/05 03:26:02 by isadbaib         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,9 @@
 # define THINKING "thinking"
 # define DEAD "dead"
 
-typedef enum *e_status
+typedef enum e_status	*t_status_philo;
+
+typedef enum e_status
 {
 	taken_a_fork,
 	eating,
@@ -37,4 +39,6 @@ typedef enum *e_status
 }	t_status;
 
 void	ft_message(const char *s);
+void	ft_message_status(t_status_philo p);
+
 #endif
