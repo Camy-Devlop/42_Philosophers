@@ -6,11 +6,18 @@
 /*   By: isadbaib <isadbaib@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/02 22:47:30 by isadbaib          #+#    #+#             */
-/*   Updated: 2025/04/05 03:28:41 by isadbaib         ###   ########.fr       */
+/*   Updated: 2025/04/05 04:21:30 by isadbaib         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/philosophers.h"
+
+static bool	ft_preparation(char **tab)
+{
+	if (ft_check(tab))
+	{
+	}
+}
 
 int	main(int n, char **tab)
 {
