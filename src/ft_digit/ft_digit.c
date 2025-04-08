@@ -6,9 +6,10 @@
 /*   By: isadbaib <isadbaib@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/05 14:55:16 by isadbaib          #+#    #+#             */
-/*   Updated: 2025/04/05 15:45:48 by isadbaib         ###   ########.fr       */
+/*   Updated: 2025/04/08 20:39:36 by isadbaib         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../include/philosophers.h"
+
 

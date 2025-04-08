@@ -6,7 +6,7 @@
 /*   By: isadbaib <isadbaib@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/02 22:46:47 by isadbaib          #+#    #+#             */
-/*   Updated: 2025/04/05 14:49:58 by isadbaib         ###   ########.fr       */
+/*   Updated: 2025/04/08 20:53:06 by isadbaib         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@
 # include <string.h>
 # include <sys/time.h>
 # include <unistd.h>
-#include <stdbool.h>
+# include <stdbool.h>
 
 # define TAKEN_FORK "taken a fork"
 # define EATING "eating"
@@ -37,9 +37,9 @@ typedef enum e_status
 	sleeping,
 	thinking,
 	dead
-}						t_status;
+}	t_status;
 
-void					ft_message(const char *s);
+void					ft_message(const char *s, bool t);
 void					ft_message_status(t_status_philo p);
 bool					ft_check(char **tab, int n);
 
