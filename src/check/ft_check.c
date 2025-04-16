@@ -6,7 +6,7 @@
 /*   By: isadbaib <isadbaib@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/05 03:35:29 by isadbaib          #+#    #+#             */
-/*   Updated: 2025/04/05 04:21:47 by isadbaib         ###   ########.fr       */
+/*   Updated: 2025/04/16 14:06:05 by isadbaib         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,4 +14,6 @@
 
 bool	ft_check(char **tab)
 {
+	(void)tab;
+	return true;
 }
