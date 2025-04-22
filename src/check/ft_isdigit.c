@@ -1,35 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_message.c                                       :+:      :+:    :+:   */
+/*   ft_isdigit.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: isadbaib <isadbaib@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/04 12:51:08 by isadbaib          #+#    #+#             */
-/*   Updated: 2025/04/22 21:05:50 by isadbaib         ###   ########.fr       */
+/*   Created: 2025/04/22 20:57:41 by isadbaib          #+#    #+#             */
+/*   Updated: 2025/04/22 21:29:07 by isadbaib         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../include/philosophers.h"
 
-void	ft_message(const char *s)
+bool	ft_isdigit(char c)
 {
-	if (!s)
-		return ;
-	write(1, s, ft_strlen(s));
-	write(1, "\n", 1);
+	return ('0' <= c && c <= '9');
 }
 
-void	ft_message_status(t_status_philo p)
+/*
+int	main(int n, char **tab)
 {
-	if (taken_a_fork == *p)
-		ft_message(TAKEN_FORK);
-	if (eating == *p)
-		ft_message(EATING);
-	if (sleeping == *p)
-		ft_message(SLEEPING);
-	if (thinking == *p)
-		ft_message(THINKING);
-	if (dead == *p)
-		ft_message(DEAD);
-}
+	int i=1;
+	while (i < n)
+	{
+	printf ("[%c] = %d \n",tab[i][0],ft_isdigit(tab[i][0]));
+	i++;
+	}
+}*/

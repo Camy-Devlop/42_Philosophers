@@ -6,7 +6,7 @@
 /*   By: isadbaib <isadbaib@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/02 22:47:30 by isadbaib          #+#    #+#             */
-/*   Updated: 2025/04/17 23:38:38 by isadbaib         ###   ########.fr       */
+/*   Updated: 2025/04/22 21:31:14 by isadbaib         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,19 +50,20 @@ int	main(int n, char **tab)
 
 	(void)n;
 	(void)tab;
-//	if (n != 6)
-//		return (0);
+	if (n != 6)
+		return (0);
+	printf("test ok\n");
 //	printf("retour de time of day = %d\n", gettimeofday(&t, NULL));
 //	printf("val sec = %ld\n", t.tv_sec);
 //	s = calloc(1, sizeof(enum e_status));
 //	s[0] = eating;
 //	ft_message_status(s);	
 //	free(s);
-	pthread_t test;
+//	pthread_t test;
 //	test = NULL;
-	pthread_create(&test, NULL, myturn, NULL);
-	youturn();
-	pthread_join(test ,NULL);
+//	pthread_create(&test, NULL, myturn, NULL);
+//	youturn();
+//	pthread_join(test ,NULL);
 //	free(test);
 	return (0);
 }

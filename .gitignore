@@ -4,7 +4,9 @@
 .*.swp
 .*.h.swp
 philo
-
+a
+*.out
+.*
 # Object files
 *.o
 *.ko
