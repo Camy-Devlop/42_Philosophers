@@ -6,7 +6,7 @@
 /*   By: isadbaib <isadbaib@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/05 03:35:29 by isadbaib          #+#    #+#             */
-/*   Updated: 2025/04/22 22:28:09 by isadbaib         ###   ########.fr       */
+/*   Updated: 2025/04/25 09:23:58 by isadbaib         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,8 +47,3 @@ bool	ft_check(char **tab, size_t nb)
 	return (true);
 }
 
-int	main(int n, char **tab)
-{
-	// char *tab[10] = {"123",NULL,"d45"};
-	printf("%s\n", ft_check(tab, n) ? "true" : "false");
-}
