@@ -6,13 +6,12 @@
 #    By: isadbaib <isadbaib@student.s19.be>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/04/02 22:46:17 by isadbaib          #+#    #+#              #
-#    Updated: 2025/04/26 01:27:33 by isadbaib         ###   ########.fr        #
+#    Updated: 2025/04/28 23:17:26 by isadbaib         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 SRC=	src/message/ft_message.c \
      	src/check/ft_check.c \
-     	src/check/ft_check_atoi.c \
      	src/check/ft_isdigit.c \
      	src/string/ft_strlen.c \
      	src/string/ft_atoi.c \
@@ -22,7 +21,6 @@ NAME = philo
 RM = rm
 FLAGS = -Wall -Wextra -Werror -g3
 OBJ = ${SRC:.c=.o}
-
 all : $(OBJ) $(NAME)
 
 $(NAME) : $(OBJ)
@@ -32,7 +30,7 @@ $(NAME) : $(OBJ)
 	$(CC) -c $< $(FLAGS) -o $@
 
 clean : 
-	$(RM) $(OBJ)
+	$(RM) -f $(OBJ)
        	
 fclean : clean
        	

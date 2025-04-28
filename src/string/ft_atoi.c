@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 
 
+#include  "../../include/philosophers.h"
 static int	ft_convert(const char *str, int signe)
 {
 	long	v;

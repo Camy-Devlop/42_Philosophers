@@ -50,8 +50,8 @@ int	main(int n, char **tab)
 
 	(void)n;
 	(void)tab;
-	if (n <= 4)
-		return (-1);
+	if (n < 5 || 6 < n)
+		return (ft_message(MESSAGE_NUMBRE), -1);
 	printf("test ok\n");
 	printf("%s\n", ft_check(tab, n) ? "true" : "false");
 //	printf("retour de time of day = %d\n", gettimeofday(&t, NULL));

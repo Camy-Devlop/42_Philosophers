@@ -36,14 +36,16 @@ bool	ft_check(char **tab, size_t nb)
 		return (false);
 	if (!tab)
 		return (false);
-	i = 0;
-	while (i + 1 < nb)
+	i = 1;
+	while (i < nb)
 	{
-		if (!ft_check_int(tab[i + 1]))
+		if (!ft_check_int(tab[i]))
 			return (false);
-		printf("%s\n", tab[i + 1]);
 		i++;
 	}
+  i = 1;
+  while (i )
+    if (ft_atoi(tab[i] ))
 	return (true);
 }
 

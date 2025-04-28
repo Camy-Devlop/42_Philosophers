@@ -45,4 +45,5 @@ void					ft_message_status(t_status_philo p);
 bool					ft_check(char **tab, size_t nb);
 size_t					ft_strlen(const char *s);
 bool					ft_isdigit(char c);
+int	ft_check_atoi(const char *str);
 #endif

@@ -13,5 +13,5 @@
 #ifndef MESSAGE_H
 # define MESSAGE_H
 
-# define MESSAGE_0 "Error number is not 5\n"
+# define MESSAGE_NUMBRE "Error, number of parametre is not correct !!"
 #endif
