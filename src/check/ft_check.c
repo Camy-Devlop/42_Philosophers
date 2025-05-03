@@ -12,20 +12,22 @@
 
 #include "../../include/philosophers.h"
 
-static bool	ft_check_int(char *s)
+static bool ft_check_int(char *s)
 {
 	size_t	i;
 
 	if (!s || ft_strlen(s) == 0)
 		return (false);
 	i = 0;
-	while (s[i] != '\0')
-	{
-		if (!ft_isdigit(s[i]))
-			return (false);
+  while (s[i] == ' ')
+    i++;
+	while (ft_isdigit(s[i]))
 		i++;
-	}
-	return (true);
+	 while (s[i] == ' ')
+    i++;
+  if (s[i] != '\0')
+    return (false);
+  return (true);
 }
 
 bool	ft_check(char **tab, size_t nb)
@@ -43,9 +45,6 @@ bool	ft_check(char **tab, size_t nb)
 			return (false);
 		i++;
 	}
-  i = 1;
-  while (i )
-    if (ft_atoi(tab[i] ))
 	return (true);
 }
 
