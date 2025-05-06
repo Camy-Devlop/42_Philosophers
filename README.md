@@ -51,6 +51,7 @@ Le programme affiche des messages avec timestamp :
 
 [timestamp_ms] X a pris une fourchette
 [timestamp_ms] X mange
+
 [timestamp_ms] X dort
 [timestamp_ms] X pense
 [timestamp_ms] X est mort
