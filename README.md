@@ -49,11 +49,11 @@ Exemple avec nombre de repas cible (s'arrête après 5 repas/philosophe)
 
 Le programme affiche des messages avec timestamp :
 
-[timestamp_ms] X a pris une fourchette
-[timestamp_ms] X mange
-[timestamp_ms] X dort
-[timestamp_ms] X pense
-[timestamp_ms] X est mort
+[timestamp_ms] X a pris une fourchette</br>
+[timestamp_ms] X mange</br>
+[timestamp_ms] X dort</br>
+[timestamp_ms] X pense</br>
+[timestamp_ms] X est mort</br>
 
 
 
