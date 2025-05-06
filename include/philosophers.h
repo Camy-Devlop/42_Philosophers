@@ -40,6 +40,14 @@ typedef enum e_status
 	dead
 }						t_status;
 
+typedef pthread_t s_philo *t_pholi;
+typedef pthread_t  s_philo{
+ 
+  pthread_mutex_t *m_fork_l;
+  pthread_mutex_t m_fork_r;
+  
+} t_phi;
+
 void					ft_message(const char *s);
 void					ft_message_status(t_status_philo p);
 bool					ft_check(char **tab, size_t nb);

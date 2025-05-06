@@ -19,7 +19,7 @@ SRC=	src/message/ft_message.c \
 CC = cc
 NAME = philo
 RM = rm
-FLAGS = -Wall -Wextra -Werror -g3
+FLAGS = -Wall -Wextra -Werror -pthread -g3
 OBJ = ${SRC:.c=.o}
 all : $(OBJ) $(NAME)
 
