@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 
 #include "../include/philosophers.h"
+
 /*
 static bool	ft_preparation(char **tab)
 {
@@ -20,59 +21,56 @@ static bool	ft_preparation(char **tab)
 }
 */
 
-void* myturn(void *arg)
+void	*myturn(void *arg)
 {
+	int	i;
+
 	(void)arg;
-	int i = 0;
-	while(i < 25)
+	i = 0;
+	while (i < 25)
 	{
 		sleep(1);
 		printf("%d My Turn!\n", i++);
 	}
-	return NULL;
+	return (NULL);
 }
 
-void youturn()
+void	youturn(void)
 {
-	int i = 0;
-	while(i < 30)
+	int	i;
+
+	i = 0;
+	while (i < 30)
 	{
 		sleep(2);
-		printf("[%d] You Turn!\n",i++);
+		printf("[%d] You Turn!\n", i++);
 	}
 }
 
-
 int	main(int n, char **tab)
 {
-//	struct timeval	t;
-//	t_status_philo	s;
+	int	tab_int[5];
 
-	(void)n;
-	(void)tab;
+	//	struct timeval	t;
+	//	t_status_philo	s;
 	if (n < 5 || 6 < n)
 		return (ft_message(MESSAGE_NUMBRE), -1);
 	printf("test ok\n");
-	printf("%s\n", ft_check(tab, n) ? "true" : "false");
-//	printf("retour de time of day = %d\n", gettimeofday(&t, NULL));
-//	printf("val sec = %ld\n", t.tv_sec);
-//	s = calloc(1, sizeof(enum e_status));
-//	s[0] = eating;
-//	ft_message_status(s);	
-//	free(s);
-//	pthread_t test;
-//	test = NULL;
-//	pthread_create(&test, NULL, myturn, NULL);
-//	youturn();
-//	pthread_join(test ,NULL);
-//	free(test);
-//	=≈≈=≈=====================≈=≈===========≈====
-//
-    int *tab_int;
-
-bool g =	ft_conversion_tab(tab, &tab_int);
-		if (g)
-				printf("ok !!¡\n");
-//					printf("%d\n",tab_int[1]);
+	printf("%s\n", ft_check(tab, n, tab_int) ? "true" : "false");
+	//	printf("retour de time of day = %d\n", gettimeofday(&t, NULL));
+	//	printf("val sec = %ld\n", t.tv_sec);
+	//	s = calloc(1, sizeof(enum e_status));
+	//	s[0] = eating;
+	//	ft_message_status(s);
+	//	free(s);
+	//	pthread_t test;
+	//	test = NULL;
+	//	pthread_create(&test, NULL, myturn, NULL);
+	//	youturn();
+	//	pthread_join(test ,NULL);
+	//	free(test);
+	//	=≈≈=≈=====================≈=≈===========≈====
+	//
+	//					printf("%d\n",tab_int[1]);
 	return (0);
 }

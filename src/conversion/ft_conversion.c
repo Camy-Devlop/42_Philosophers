@@ -12,25 +12,17 @@
 
 #include "../../include/philosophers.h"
 
-bool  ft_conversion_tab(char **tab, int **res)
+bool	ft_conversion_tab(char **tab, int nb_param, int *res)
 {
-  int i;
+	int	i;
 
-	(void)tab;
-	(void)i;
-  if (!res)
-    return (false);
-  *res = ft_calloc(4, sizeof(int));
-  if (!*res)
-    return (false);
-  i = 1;  
-  while (i < 5)
-  {
-//    (*res)[i] = ft_calloc(1, sizeof(int));
-    (*res)[i]	 = ft_atoi(tab[i]);
-		printf("%d \n",(*res)[i]);
-
-    i++;
-  }
-  return (true);
+	if (!res)
+		return (ft_message("Ërror stokage not exist for param !!!"), false);
+	i = 1;
+	while (i < nb_param)
+	{
+		res[i - 1] = ft_atoi(tab[i]);
+		i++;
+	}
+	return (true);
 }

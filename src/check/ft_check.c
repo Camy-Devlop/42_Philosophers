@@ -12,25 +12,25 @@
 
 #include "../../include/philosophers.h"
 
-static bool ft_check_int(char *s)
+static bool	ft_check_int(char *s)
 {
 	size_t	i;
 
 	if (!s || ft_strlen(s) == 0)
 		return (false);
 	i = 0;
-  while (s[i] == ' ')
-    i++;
+	while (s[i] == ' ')
+		i++;
 	while (ft_isdigit(s[i]))
 		i++;
-	 while (s[i] == ' ')
-    i++;
-  if (s[i] != '\0')
-    return (false);
-  return (true);
+	while (s[i] == ' ')
+		i++;
+	if (s[i] != '\0')
+		return (false);
+	return (true);
 }
 
-bool	ft_check(char **tab, size_t nb)
+bool	ft_check(char **tab, size_t nb, int *res)
 {
 	size_t	i;
 
@@ -45,6 +45,7 @@ bool	ft_check(char **tab, size_t nb)
 			return (false);
 		i++;
 	}
+	if (!ft_conversion_tab(tab, nb, res))
+		return (ft_message("Ërror, conversion !!!"), false);
 	return (true);
 }
-
