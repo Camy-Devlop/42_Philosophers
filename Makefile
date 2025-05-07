@@ -6,7 +6,7 @@
 #    By: isadbaib <isadbaib@student.s19.be>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/04/02 22:46:17 by isadbaib          #+#    #+#              #
-#    Updated: 2025/04/28 23:17:26 by isadbaib         ###   ########.fr        #
+#    Updated: 2025/05/07 04:11:07 by isadbaib         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,6 +15,9 @@ SRC=	src/message/ft_message.c \
      	src/check/ft_isdigit.c \
      	src/string/ft_strlen.c \
      	src/string/ft_atoi.c \
+	src/conversion/ft_calloc.c \
+	src/conversion/ft_conversion.c \
+	src/memory/ft_bzero.c \
 	src/pilosophers.c
 CC = cc
 NAME = philo
