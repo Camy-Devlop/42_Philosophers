@@ -66,5 +66,13 @@ int	main(int n, char **tab)
 //	youturn();
 //	pthread_join(test ,NULL);
 //	free(test);
+//	=≈≈=≈=====================≈=≈===========≈====
+//
+    int *tab_int;
+
+bool g =	ft_conversion_tab(tab, &tab_int);
+		if (g)
+				printf("ok !!¡\n");
+//					printf("%d\n",tab_int[1]);
 	return (0);
 }
