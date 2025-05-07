@@ -57,7 +57,7 @@ int	main(int n, char **tab)
 		return (ft_message(MESSAGE_NUMBRE), -1);
 	printf("test ok\n");
 	printf("%s\n", ft_check(tab, n, tab_int) ? "true" : "false");
-	//	printf("retour de time of day = %d\n", gettimeofday(&t, NULL));
+	//	printf("retour de time of day = %d\n", gettimeofday(&t, NULL))
 	//	printf("val sec = %ld\n", t.tv_sec);
 	//	s = calloc(1, sizeof(enum e_status));
 	//	s[0] = eating;

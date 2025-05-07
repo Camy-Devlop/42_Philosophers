@@ -22,7 +22,10 @@ bool	ft_conversion_tab(char **tab, int nb_param, int *res)
 	while (i < nb_param)
 	{
 		res[i - 1] = ft_atoi(tab[i]);
-		i++;
+		if (res[i - 1] <= 0)
+      return (ft_message("Error, value negatif not accepted!!!"), false);
+    i++;
+
 	}
 	return (true);
 }
