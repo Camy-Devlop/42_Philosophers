@@ -46,6 +46,6 @@ bool	ft_check(char **tab, size_t nb, int *res)
 		i++;
 	}
 	if (!ft_conversion_tab(tab, nb, res))
-		return (ft_message("Ërror, conversion !!!"), false);
+		return (ft_message("Error, conversion !!!", true), false);
 	return (true);
 }

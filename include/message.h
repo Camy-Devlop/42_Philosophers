@@ -14,4 +14,6 @@
 # define MESSAGE_H
 
 # define MESSAGE_NUMBRE "Error, number of parametre is not correct !!"
+# define MESSAGE_INT_MAX "Error,value not accepted or superior INT_MAX!!!"
+# define MESSAGE_PARAM "Error stokage not exist for param !!!"
 #endif

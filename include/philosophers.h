@@ -44,12 +44,14 @@ typedef enum e_status
 typedef struct t_phi	*t_pholi;
 typedef struct s_philo
 {
+	int					i;
+	struc timeval		t;
+	t_status_philo		status;
 	pthread_mutex_t		*m_fork_l;
 	pthread_mutex_t		m_fork_r;
-
 }						t_phi;
 
-void					ft_message(const char *s);
+void					ft_message(const char *s, bool r);
 void					ft_message_status(t_status_philo p);
 bool					ft_check(char **tab, size_t nb, int *val_param);
 size_t					ft_strlen(const char *s);

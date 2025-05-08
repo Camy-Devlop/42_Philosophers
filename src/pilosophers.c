@@ -49,15 +49,15 @@ void	youturn(void)
 
 int	main(int n, char **tab)
 {
-	int	tab_int[5];
+	int				tab_int[5];
+	struc timeval	*t;
 
-	//	struct timeval	t;
 	//	t_status_philo	s;
 	if (n < 5 || 6 < n)
-		return (ft_message(MESSAGE_NUMBRE), -1);
+		return (ft_message(MESSAGE_NUMBRE, true), -1);
 	printf("test ok\n");
 	printf("%s\n", ft_check(tab, n, tab_int) ? "true" : "false");
-	//	printf("retour de time of day = %d\n", gettimeofday(&t, NULL))
+	printf("retour de time of day = %d\n", gettimeofday(&t, NULL));
 	//	printf("val sec = %ld\n", t.tv_sec);
 	//	s = calloc(1, sizeof(enum e_status));
 	//	s[0] = eating;
