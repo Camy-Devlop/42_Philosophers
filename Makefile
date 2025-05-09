@@ -18,6 +18,7 @@ SRC=	src/message/ft_message.c \
 	src/conversion/ft_calloc.c \
 	src/conversion/ft_conversion.c \
 	src/memory/ft_bzero.c \
+	src/init.c \
 	src/pilosophers.c
 CC = cc
 NAME = philo
