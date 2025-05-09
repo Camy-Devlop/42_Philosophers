@@ -18,4 +18,5 @@
 # define MESSAGE_PARAM "Error stokage not exist for param !!!"
 # define MESSAGE_EXIST "Error Not Exist in the main philo !!!"
 # define MESSAGE_ALLOW "Error Not allow philo !!!"
+# define MESSAGE_TIMEVAL "Error Not init timeVal !!!"
 #endif

@@ -56,10 +56,12 @@ int	main(int n, char **tab)
     printf("philo ok\n") ;
   else 
     printf("philo NOT\n") ;
+  printf("valur de timeVal %ld\n",p->t.tv_sec);
 
 	//	t_status_philo	s;
 	if (n < 5 || 6 < n)
 		return (ft_message(MESSAGE_NUMBRE, true), -1);
+
 	printf("test ok\n");
 	
   printf("%s\n", ft_check(tab, n, tab_int) ? "true" : "false");
