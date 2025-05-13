@@ -65,8 +65,8 @@ int	main(int n, char **tab)
 	printf("test ok\n");
 	
   printf("%s\n", ft_check(tab, n, tab_int) ? "true" : "false");
-	
-
+  pthread_create(&(*p).philo, NULL,myturn, NULL);
+  pthread_join((p)->philo, NULL);
 
 
 

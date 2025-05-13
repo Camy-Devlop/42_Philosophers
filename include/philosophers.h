@@ -38,13 +38,14 @@ typedef enum e_status
 	eating,
 	sleeping,
 	thinking,
-	detd
+	dead
 }						t_status;
 
 typedef struct s_philo	*t_philo;
 typedef struct s_philo
 {
-	int					i;
+	int					      i;
+
 	struct timeval		t;
 	t_status_philo		status;
 	pthread_mutex_t		*m_fork_l;
