@@ -49,33 +49,38 @@ void	youturn(void)
 
 int	main(int n, char **tab)
 {
-	int				tab_int[5];
-	t_philo p;
+	int		tab_int[5];
+	t_philo	*p[10];
+	int		i;
 
-  if (init(&p))
-    printf("philo ok\n") ;
-  else 
-    printf("philo NOT\n") ;
-  printf("valur de timeVal %ld\n",p->t.tv_sec);
-
+	i = 0;
+	while (i < 10)
+	{
+		if (init(*(p[i])))
+			printf("philo ok %d\n", i + 1);
+		else
+			printf("philo NOT %d\n", i + 1);
+		i++;
+	}
+	// printf("valur de timeVal %ld\n", p[0]->t.tv_sec);
 	//	t_status_philo	s;
 	if (n < 5 || 6 < n)
 		return (ft_message(MESSAGE_NUMBRE, true), -1);
-
 	printf("test ok\n");
-	
-  printf("%s\n", ft_check(tab, n, tab_int) ? "true" : "false");
-  pthread_create(&(*p).philo, NULL,myturn, NULL);
-  pthread_join((p)->philo, NULL);
-
-
-
-
-
-
-
-  //  printf("retour de time of day = %d\n", gettimeofday(&t, NULL));
-  //  printf("retour de time of day = %ld\n", t->tv_usec);
+	printf("%s\n", ft_check(tab, n, tab_int) ? "true" : "false");
+	i = 0;
+	while (i < 10)
+	{
+		pthread_create(*(p[i]->philo), NULL, myturn, NULL);
+		printf("thread %d\n", i);
+		i++;
+	}
+	printf("cree les philo fini\n");
+	i = 0;
+	while (i < 10)
+		pthread_join(*(p[i++])->philo, NULL);
+	//  printf("retour de time of day = %d\n", gettimeofday(&t, NULL));
+	//  printf("retour de time of day = %ld\n", t->tv_usec);
 	//	printf("val sec = %ld\n", t.tv_sec);
 	//	s = calloc(1, sizeof(enum e_status));
 	//	s[0] = eating;
