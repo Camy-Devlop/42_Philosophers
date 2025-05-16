@@ -45,10 +45,9 @@ typedef struct s_philo	*t_philo;
 typedef struct s_philo
 {
 	int					      i;
-
 	struct timeval		t;
 	t_status_philo		status;
-	pthread_t		philo;
+	pthread_t		      philo;
 	pthread_mutex_t		*m_fork_l;
 	pthread_mutex_t		m_fork_r;
 }						t_phi;
@@ -63,5 +62,5 @@ void				ft_bzero(void *memo, size_t size);
 void				*ft_calloc(size_t elementCount, size_t elementSize);
 int				ft_atoi(const char *str);
 bool				ft_conversion_tab(char **tab, int nb_param, int *res);
-bool          			init(t_philo *p);
+bool          			init(t_philo *p, int i);
 #endif

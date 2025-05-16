@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 
 #include "../include/philosophers.h"
-
+#include <time.h>
 /*
 static bool	ft_preparation(char **tab)
 {
@@ -29,8 +29,8 @@ void	*myturn(void *arg)
 	i = 0;
 	while (i < 25)
 	{
-		sleep(1);
-		printf("%d My Turn!\n", i++);
+		sleep((int)((rand() % (15 - 3)) + 3));
+		printf("%d My Turn! %d\n", i++, ((t_philo)arg)->i);
 	}
 	return (NULL);
 }
@@ -56,6 +56,7 @@ int	main(int n, char **tab)
 	(void)n;
 	(void)tab;
 	(void)tab_int;
+  srand(time(NULL));
 	i = 0;
 	p = calloc(10, sizeof(t_philo));
 //	init(&p[i]);
@@ -64,7 +65,7 @@ int	main(int n, char **tab)
 //	pthread_join(p[i]->philo, NULL);
 		while (i < 10)
 		{
-			if (init(&(p[i])))
+			if (init(&(p[i]), i))
 				printf("philo ok %d = adress = %p\n", i + 1, &p[i]->philo);
 			else
 				printf("philo NOT %d\n", i + 1);
