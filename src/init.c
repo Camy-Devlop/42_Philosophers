@@ -13,12 +13,12 @@
 
 #include "../include/philosophers.h"
 
-bool init(t_philo f)
+bool init(t_philo *f)
 {
-  f = ft_calloc(1, sizeof(struct s_philo));
-  if (!f)
+  *f = ft_calloc(1, sizeof(struct s_philo));
+  if (!*f)
     return (ft_message(MESSAGE_ALLOW, true), false);
-  if (gettimeofday(&(f)->t, NULL) != 0)
+  if (gettimeofday(&(*f)->t, NULL) != 0)
     return (ft_message(MESSAGE_TIMEVAL, true), false);
   return (true);
 }
