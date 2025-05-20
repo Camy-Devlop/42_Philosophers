@@ -70,4 +70,5 @@ void					*ft_calloc(size_t elementCount, size_t elementSize);
 int						ft_atoi(const char *str);
 bool					ft_conversion_tab(char **tab, int nb_param, int *res);
 bool					init(t_philo *p, int i);
+//asdsdasdl;adsal;a;l,l;asasld;
 #endif

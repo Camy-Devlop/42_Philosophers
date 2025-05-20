@@ -6,7 +6,7 @@
 /*   By: isadbaib <isadbaib@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/08 21:57:36 by isadbaib          #+#    #+#             */
-/*   Updated: 2025/05/08 21:57:46 by isadbaib         ###   ########.fr       */
+/*   Updated: 2025/05/20 13:05:26 by isadbaib         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,3 +23,5 @@ bool init_philo(t_philo *f, int i)
     return (ft_message(MESSAGE_TIMEVAL, true), false);
   return (true);
 }
+
+boo
