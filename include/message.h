@@ -19,4 +19,5 @@
 # define MESSAGE_EXIST "Error Not Exist in the main philo !!!"
 # define MESSAGE_ALLOW "Error Not allow philo !!!"
 # define MESSAGE_TIMEVAL "Error Not init timeVal !!!"
+# define MESSAGE_MANAGER "Error Not init t_manager !!!"
 #endif

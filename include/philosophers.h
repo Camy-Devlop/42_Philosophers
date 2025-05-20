@@ -6,7 +6,7 @@
 /*   By: isadbaib <isadbaib@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/02 22:46:47 by isadbaib          #+#    #+#             */
-/*   Updated: 2025/05/18 21:49:22 by isadbaib         ###   ########.fr       */
+/*   Updated: 2025/05/20 11:04:21 by isadbaib         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,12 +45,19 @@ typedef struct s_philo	*t_philo;
 typedef struct s_philo
 {
 	int					i;
+	bool			*stop;
 	struct timeval		t;
 	t_status_philo		status;
 	pthread_t			*philo;
 	pthread_mutex_t		*m_fork_l;
 	pthread_mutex_t		m_fork_r;
 }						t_phi;
+
+typedef struct s_manager
+{
+	bool	  stop;
+	pthread team;
+}	t_manager;
 
 void					ft_message(const char *s, bool r);
 void					ft_message_status(t_status_philo p);

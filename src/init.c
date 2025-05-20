@@ -13,7 +13,7 @@
 
 #include "../include/philosophers.h"
 
-bool init(t_philo *f, int i)
+bool init_philo(t_philo *f, int i)
 {
   *f = ft_calloc(1, sizeof(struct s_philo));
   if (!*f)
