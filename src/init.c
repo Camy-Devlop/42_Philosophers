@@ -10,18 +10,23 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-
 #include "../include/philosophers.h"
 
-bool init_philo(t_philo *f, int i)
+bool	init_philo(t_philo *f, int i)
 {
-  *f = ft_calloc(1, sizeof(struct s_philo));
-  if (!*f)
-    return (ft_message(MESSAGE_ALLOW, true), false);
-  (*f)->i = i;
-  if (gettimeofday(&(*f)->t, NULL) != 0)
-    return (ft_message(MESSAGE_TIMEVAL, true), false);
-  return (true);
+	*f = ft_calloc(1, sizeof(struct s_philo));
+	if (!*f)
+		return (ft_message(MESSAGE_ALLOW, true), false);
+	(*f)->i = i;
+	if (gettimeofday(&(*f)->t, NULL) != 0)
+		return (ft_message(MESSAGE_TIMEVAL, true), false);
+	return (true);
 }
 
-boo
+bool	init_manager(t_manager m)
+{
+	m = ft_calloc(1, sizeof(struct s_manager));
+	if (!m)
+		return (ft_message(MESSAGE_MANAGER, true), false);
+	return (true);
+}
