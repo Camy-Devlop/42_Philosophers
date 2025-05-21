@@ -6,7 +6,7 @@
 /*   By: isadbaib <isadbaib@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/18 20:27:34 by isadbaib          #+#    #+#             */
-/*   Updated: 2025/05/20 13:03:42 by isadbaib         ###   ########.fr       */
+/*   Updated: 2025/05/21 10:34:02 by isadbaib         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,11 +28,11 @@ void	*bonjour(void *args)
 
 int	main(void)
 {
-	t_manager	*p;
+	t_manager	p;
 
 	(void)p;
 	p = NULL;
-	init_manager(p);
+	init_manager(&p);
 	free(p);
 	return (0);
 }
