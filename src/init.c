@@ -23,10 +23,13 @@ bool	init_philo(t_philo *f, int i)
 	return (true);
 }
 
-bool	init_manager(t_manager m)
+bool	init_manager(t_manager *m)
 {
-	m = ft_calloc(1, sizeof(struct s_manager));
+	m = ft_calloc(1, sizeof(t_manager));
 	if (!m)
+		return (ft_message(MESSAGE_MANAGER, true), false);
+	*m = ft_calloc(1, sizeof(struct s_manager));
+	if (!*m)
 		return (ft_message(MESSAGE_MANAGER, true), false);
 	return (true);
 }
