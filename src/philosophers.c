@@ -6,7 +6,7 @@
 /*   By: isadbaib <isadbaib@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/02 22:47:30 by isadbaib          #+#    #+#             */
-/*   Updated: 2025/04/25 09:24:36 by isadbaib         ###   ########.fr       */
+/*   Updated: 2025/05/22 22:22:51 by isadbaib         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,40 +58,49 @@ int	main(int n, char **tab)
 	(void)tab_int;
   srand(time(NULL));
 	i = 0;
-	p = calloc(10, sizeof(t_philo));
-//	init(&p[i]);
-//	pthread_create(&p[i]->philo, NULL, myturn, NULL);
-	i = 0;
-//	pthread_join(p[i]->philo, NULL);
-		while (i < 10)
-		{
-			if (init(&(p[i]), i))
-				printf("philo ok %d = adress = %p\n", i + 1, &p[i]->philo);
-			else
-				printf("philo NOT %d\n", i + 1);
-			i++;
-		}
 		// printf("valur de timeVal %ld\n", p[0]->t.tv_sec);
 		//	t_status_philo	s;
-		if (n < 5 || 6 < n)
-			return (ft_message(MESSAGE_NUMBRE, true), -1);
-		printf("test ok\n");
-		printf("%s\n", ft_check(tab, n, tab_int) ? "true" : "false");
-		i = 0;
-		while (i < 10)
-		{
-			printf("%p = %d\n", &p[i]->philo, i);
-			pthread_create((&p[i]->philo), NULL, myturn, p[i]);
-			printf("thread %d\n", i);
-			i++;
-		}
-		printf("cree les philo fini\n");
-		i = 0;
-		while (i < 10)
-		{
-			pthread_join(p[i]->philo, NULL);
-			i++;
-		}
+	if (n < 5 || 6 < n)
+		return (ft_message(MESSAGE_NUMBRE, true), -1);
+	printf("test ok\n");
+	printf("%s\n", ft_check(tab, n, tab_int) ? "true" : "false");
+	
+	if (!ft_conversion_tab(tab, n, tab_int))
+		return (ft_message("Error convertion",true), 0);
+	
+	while (i < n - 1)
+	{
+		printf("%d => %d\n", i, tab_int[i]);
+		i++;
+	}
+	return 0;
+//========================================================================	
+	p = calloc(10, sizeof(t_philo));
+	while (i < 10)
+	{
+		if (init_philo(&(p[i]), i))
+			printf("philo ok %d = adress = %p\n", i + 1, &p[i]->philo);
+		else
+			printf("philo NOT %d\n", i + 1);
+		i++;
+	}
+//========================================================================	
+	i = 0;
+	while (i < 10)
+	{
+		printf("%p = %d\n", &p[i]->philo, i);
+		pthread_create((p[i]->philo), NULL, myturn, p[i]);
+		printf("thread %d\n", i);
+		i++;
+	}
+//========================================================================	
+	printf("cree les philo fini\n");
+	i = 0;
+	while (i < 10)
+	{
+		pthread_join(*p[i]->philo, NULL);
+		i++;
+	}
 	//  printf("retour de time of day = %d\n", gettimeofday(&t, NULL));
 	//  printf("retour de time of day = %ld\n", t->tv_usec);
 	//	printf("val sec = %ld\n", t.tv_sec);
